@@ -17,16 +17,16 @@ title: Cardano Pi
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Cardano Stake Pool + Raspberry Pi 4
-baseurl: '/' # the subpath of your site, e.g. /blog
+baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://mattlittleson.github.io/cardano-pi/' # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+# twitter_username: jekyllrb
+github_username: mattlittleson
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+theme: just-the-docs
+# plugins:
+# - jekyll-feed
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -38,3 +38,23 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+collections:
+  # Define a collection named "docs", its documents reside in the "_docs" directory
+  docs:
+    permalink: '/:collection/:path/'
+    output: true
+
+just_the_docs:
+  # Define which collections are used in just-the-docs
+  collections:
+    # Reference the "docs" collection
+    docs:
+      # Give the collection a name
+      name: Documentation
+      # Exclude the collection from the navigation
+      # Supports true or false (default)
+      nav_exclude: false
+      # Exclude the collection from the search
+      # Supports true or false (default)
+      search_exclude: false
+# color_scheme: dark

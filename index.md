@@ -1,6 +1,12 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: Buttons
+parent: Customization
+nav_order: 1
 ---
+
+# Cardano Pi
+
+Cardano Stake Pool + Raspberry Pi 4
+
+This is still in development!
