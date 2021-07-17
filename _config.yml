@@ -1,7 +1,6 @@
 title: Cardano Pi
 github_username: mattlittleson
 markdown: kramdown
-color_scheme: 'dark'
 search_enabled: false
 remote_theme: pmarsceill/just-the-docs
 
