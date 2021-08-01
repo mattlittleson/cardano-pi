@@ -26,3 +26,7 @@ sudo ufw allow from <relaynode ip address> proto tcp to any port 6000
 sudo ufw allow from <block ip address> proto tcp to any port 6000
 {% endhighlight %}
 
+4 - test ports with netcat
+{% highlight bash %}
+netcat -z -n -v <ip address> 6000
+{% endhighlight %}
