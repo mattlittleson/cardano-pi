@@ -27,7 +27,7 @@ adduser username
 - Set a strong password
 - Fill in user data (or just accept defaults)
 
-3- Add "username" to the sudo group with usermod
+3 - Add "username" to the sudo group with usermod
 
 {% highlight bash %}
 usermod -aG sudo username
