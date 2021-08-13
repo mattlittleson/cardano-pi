@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cardano Pi
+title: Home
 parent: Customization
 nav_order: 1
 ---
