@@ -7,6 +7,8 @@ has_children: true
 
 # Setting up Cardano
 
-This guide is heavily based on [Coin Cashew's Guide][cc] with modifications to allow successful compilation on a **Raspberry Pi 4 Model B 8GB**
+1. Set LLVM up for raspberry pi (allows cardano-cli to compile successfully)
+
+2. Start using [Coin Cashew's Guide][cc]
 
 [cc]: https://www.coincashew.com/coins/overview-ada/guide-how-to-build-a-haskell-stakepool-node
