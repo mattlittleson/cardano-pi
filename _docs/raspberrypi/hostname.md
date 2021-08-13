@@ -10,8 +10,6 @@ nav_order: 2
 The default hostname is `ubuntu`,
 to make things less confusing while `ssh`ing into each pi, lets change the hostnames
 
-## Change a new user
-
 1 - Edit hostname file
 
 {% highlight bash %}
