@@ -10,6 +10,8 @@ nav_order: 2
 compilation requires `llvm-9`
 
 {% highlight bash %}
+sudo apt-get update -y
+sudo apt-get upgrade -y
 sudo apt-get install llvm llvm-9
 {% endhighlight %}
 
