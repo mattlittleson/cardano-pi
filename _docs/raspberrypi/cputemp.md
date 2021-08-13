@@ -20,7 +20,7 @@ printf "CPU Temp: %.3f°C\n"  $temp_f
 
 b - Compile c program
 {% highlight c %}
-# temp.c
+// temp.c
 #include <stdio.h>
 int main() {
  FILE *fp;
