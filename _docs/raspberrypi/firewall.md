@@ -14,15 +14,16 @@ sudo ufw status
 {% endhighlight %}
 
 
-
-2 - allow connections from block -> relay node
+2 - allow connections for block
 {% highlight bash %}
+# Block Producer node
 sudo ufw allow from <relaynode ip address> proto tcp to any port 6000
 {% endhighlight %}
 
 
-3 - allow connections from relay node -> block
+3 - allow connections for relay node
 {% highlight bash %}
+# Relay node
 sudo ufw allow from <block ip address> proto tcp to any port 6000
 {% endhighlight %}
 
