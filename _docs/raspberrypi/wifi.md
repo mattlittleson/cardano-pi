@@ -45,7 +45,16 @@ network:
 
 {% endhighlight %}
 
-3 - Changes to `/etc/netplan/50-cloud-init.yaml` will not persist across an instance reboot. To disable cloud-init's network configuration capabilities
+
+3 - Test the config file for syntax errors
+{% highlight bash %}
+netplan apply
+{% endhighlight %}
+
+- If you get a permission denied error, great! The file was parsed correctly.
+
+
+4 - Changes to `/etc/netplan/50-cloud-init.yaml` will not persist across an instance reboot. To disable cloud-init's network configuration capabilities
 
 {% highlight bash %}
 sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
@@ -53,4 +62,9 @@ sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 and write the following:
 {% highlight cfg %}
 network: {config: disabled}
+{% endhighlight %}
+
+5 - Reboot
+{% highlight bash %}
+sudo shutdown -r now
 {% endhighlight %}
