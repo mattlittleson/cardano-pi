@@ -45,7 +45,7 @@ gcc temp.c -o temp
 sudo mv ./temp /usr/local/bin/
 {% endhighlight %}
 
-[forum]: https://www.coincashew.com/coins/overview-ada/guide-how-to-build-a-haskell-stakepool-node
+[forum]: https://www.raspberrypi.org/forums/viewtopic.php?t=252115
 
 
 
