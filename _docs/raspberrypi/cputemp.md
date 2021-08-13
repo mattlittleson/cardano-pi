@@ -10,29 +10,31 @@ nav_order: 4
 
 a - Make a bash script
 {% highlight bash %}
+
 #!/bin/bash
-
 temp=$(</sys/class/thermal/thermal_zone0/temp)
-
 temp_f=`echo "$temp/1000" | bc -l`
 printf "CPU Temp: %.3f°C\n"  $temp_f
+
 {% endhighlight %}
 
 b - Compile c program
 {% highlight c %}
+
 // temp.c
 #include <stdio.h>
 int main() {
- FILE *fp;
-
-   int temp = 0;
-   fp = fopen("/sys/class/thermal/thermal_zone0/temp", "r");
-   fscanf(fp, "%d", &temp);
-   printf(">> CPU Temp: %.2f°C\n", temp / 1000.0);
-   fclose(fp);
-
-   return 0;
+  FILE *fp;
+  int temp = 0;
+  
+  fp = fopen("/sys/class/thermal/thermal_zone0/temp", "r");
+  fscanf(fp, "%d", &temp);
+  printf(">> CPU Temp: %.2f°C\n", temp / 1000.0);
+  fclose(fp);
+  
+  return 0;
 }
+
 {% endhighlight %}
 
 {% highlight bash %}
