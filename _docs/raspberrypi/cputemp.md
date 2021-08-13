@@ -1,6 +1,3 @@
-
-
-
 ---
 parent: Raspberry Pi 4
 layout: default
