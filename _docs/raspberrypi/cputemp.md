@@ -2,7 +2,7 @@
 parent: Raspberry Pi 4
 layout: default
 title: CPU Temp
-nav_order: 4
+nav_order: 6
 ---
 
 # Getting the CPU temp
