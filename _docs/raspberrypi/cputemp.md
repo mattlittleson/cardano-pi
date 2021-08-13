@@ -18,7 +18,7 @@ printf "CPU Temp: %.3f°C\n"  $temp_f
 
 {% endhighlight %}
 
-b - Compile c program
+b - Compile a C program
 {% highlight c %}
 
 // temp.c
