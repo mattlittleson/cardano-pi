@@ -8,7 +8,7 @@ nav_order: 6
 # Getting the CPU temp
 [Thanks to this Forum Post][forum]{:target="_blank"}
 
-a - Make a bash script
+a. Make a bash script
 {% highlight bash %}
 
 #!/bin/bash
@@ -18,7 +18,7 @@ printf "CPU Temp: %.3f°C\n"  $temp_f
 
 {% endhighlight %}
 
-b - Compile a C program
+b. Compile a C program
 {% highlight c %}
 
 // temp.c
