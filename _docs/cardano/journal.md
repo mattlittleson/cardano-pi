@@ -6,7 +6,7 @@ nav_order: 4
 ---
 
 # Journal
-`journalctl` logs all the connections `cardano-node` makes, this file can get big.
+`journal` logs all the connections `cardano-node` makes, this file can get big.
  
 Save space by only keeping the last 7 days of logging.
 ```
