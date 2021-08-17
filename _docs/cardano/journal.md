@@ -19,6 +19,6 @@ MaxRetentionSec=7d
 
 Load the new config
 ```
-service systemd-journald restart
+sudo service systemd-journald restart
 ```
 
